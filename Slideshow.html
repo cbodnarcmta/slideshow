@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<div class="w3-content w3-section" style="max-width:1500px">
+  	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/xw9k2trxm1urt80/slide_1.png" style="width:100%">
+  	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/2t9rmnndjxwwysf/slide_2.png" style="width:100%">
+  	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/18s4sea6f57abza/slide_3.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/wyowrad0yh5yths/slide_4.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/65f3dbekazfo27c/slide_5.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/7gfeir4rvrj9bm3/slide_6.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/mcrzxs6a5qcs9ef/slide_7.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/wag9oeflpc0hys5/slide_8.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/u0fmij3z56diloc/slide_9.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/4rww4bd0woo635n/slide_10.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/c8y98pa0uupkcpg/slide_11.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/5xis2zcj2ui2gg5/slide_12.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/dhffjal5q9do8a5/slide_13.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/6ed3u6qqn2qast7/slide_14.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/dnphqpv8lm9wnta/slide_15.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/mria7oh10kjhqrm/slide_16.png" style="width:100%">
+	<img class="mySlides" src="https://dl.dropboxusercontent.com/s/xidsxjib0edyn99/slide_17.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 10000); // Change image every 10 seconds
+}
+</script>
+
+</body>
+</html>
